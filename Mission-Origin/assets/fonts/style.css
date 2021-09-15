@@ -24,6 +24,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+  .icon-smartphone:before {
+    content: "\e900";
+  }
 
 .icon-develop:before {
   content: "\e900";

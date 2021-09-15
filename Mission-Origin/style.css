@@ -40,6 +40,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title {
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
@@ -99,6 +103,13 @@ body {
   margin-bottom: 1rem;
 }
 
+.section header {
+  margin-bottom: 4rem;
+}
+
+.section header strong {
+  color: var(--base-color);
+}
 #header {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
@@ -109,6 +120,10 @@ body {
   left: 0;
   z-index: 100;
   background-color: var(--body-color);
+}
+
+#header.scroll {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
 }
 /* ========== Layout ===============================*/
 
@@ -168,6 +183,12 @@ nav ul li a:hover::after{
 nav .menu{
   opacity: 0;
   visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
 }
 
 nav.show .menu{
@@ -183,11 +204,12 @@ nav.show .menu{
   top: 0;
   left: 0;
 
-}
-
-nav.show .menu {
   display: grid;
   place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
 }
 
 nav.show ul.grid{
@@ -205,12 +227,16 @@ nav .icon-close {
   opacity: 0;
 
   position: absolute;
+  top: -1.5rem;
   right: 1.5rem;
+
+  transition: .2s;
 }
 
 nav.show div.icon-close{
   visibility: visible;
   opacity: 1;
+  top: 1.5rem;
 }
 
 /* ========== Navegation ===============================*/
@@ -310,3 +336,29 @@ nav.show div.icon-close{
   text-align: justify;
 }
 /* ========== About ===============================*/
+/* ========== Services ===============================*/
+.cards.grid {
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: .25rem solid var(--base-color);
+  border-radius: .25rem .25rem 0 0;
+  text-align: center;
+}
+
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color);
+}
+
+.card .title{
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ========== Services ===============================*/
