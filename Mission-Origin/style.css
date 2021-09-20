@@ -419,7 +419,7 @@ nav.show div.icon-close{
 /* ========== swiper ===============================*/
 .swiper-slide {
   height: auto;
-  padding: 4rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .swiper-pagination-bullet {
@@ -432,3 +432,33 @@ nav.show div.icon-close{
 }
 
 /* ========== swiper ===============================*/
+
+/* ========== Contact ===============================*/
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: var(--base-color);
+}
+
+/* ========== Contact ===============================*/
